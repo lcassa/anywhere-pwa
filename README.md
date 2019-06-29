@@ -1,4 +1,4 @@
-# Anywhere/Lightning Polymer 3.0 + PWA approach to offline first POC
+# Polymer 3.0 + PWA approach to offline first POC
 
 **Note:** This is under development by Leandro Cassa (lcassa@br.ibm.com), it is based of https://github.com/polymer/pwa-starter-kit
 
