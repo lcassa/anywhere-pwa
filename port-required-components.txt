@@ -1,0 +1,10 @@
+# Required components to port
+
+# Base
+- maximo-content-selector
+- maximo-label
+- maximo-button
+- maximo-checkbox
+
+# WC Specifics
+- maximo-inspector-tile

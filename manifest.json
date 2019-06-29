@@ -1,0 +1,21 @@
+{
+  "name": "anywhere-pwa",
+  "short_name": "anywhere-pwa",
+  "description": "anywhere-pwa",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1D3649",
+  "background_color": "#1D3649",
+  "icons": [
+    {
+      "src": "images/manifest/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/manifest/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

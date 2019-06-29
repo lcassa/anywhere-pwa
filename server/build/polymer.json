@@ -1,0 +1,87 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/components/any-app.js",
+  "fragments": [
+    "src/components/any-list-item.js",
+    "src/components/pouchdb-binder.js"
+  ],
+  "sources": [
+    "images/**/*",
+    "index.html",
+    "src/components/any-app.js",
+    "src/components/any-list-item.js",
+    "src/components/pouchdb-binder.js"
+  ],
+  "extraDependencies": [
+    "bower_components/webcomponentsjs/*.js",
+    "manifest.json",
+    "push-manifest.json",
+    "node_assets/@webcomponents/webcomponentsjs/**",
+    "node_assets/promise-polyfill/dist/polyfill.min.js",
+    "node_assets/whatwg-fetch/fetch.js",
+    "node_assets/pouchdb/dist/pouchdb.min.js",
+    "node_assets/pouchdb/dist/pouchdb.find.min.js"
+  ],
+  "builds": [
+    {
+      "name": "esm-bundled",
+      "browserCapabilities": [
+        "es2015",
+        "modules"
+      ],
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": true,
+      "addServiceWorker": true,
+      "basePath": true
+    },
+    {
+      "name": "es6-bundled",
+      "browserCapabilities": [
+        "es2015"
+      ],
+      "js": {
+        "compile": "es2015",
+        "minify": true,
+        "transformModulesToAmd": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": true,
+      "addServiceWorker": true,
+      "basePath": true
+    },
+    {
+      "name": "es5-bundled",
+      "js": {
+        "compile": "es5",
+        "minify": true,
+        "transformModulesToAmd": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": true,
+      "addServiceWorker": true,
+      "basePath": true
+    }
+  ],
+  "autoBasePath": true,
+  "npm": true,
+  "componentDir": "node_assets/",
+  "moduleResolution": "node"
+}
