@@ -35,11 +35,11 @@ class AnyApp extends PolymerElement {
     // data from bluemix cloudant
     let bluemixData = {
       "name": "anywhere",
-      "username": "d2a67c57-1c89-4ae9-a71c-c18ca298f338-bluemix",
-      "password": "e67deccd52bfda83dc235b8346d58949e6e612aa32086d5c249a53d0bfb79f22",
-      "host": "d2a67c57-1c89-4ae9-a71c-c18ca298f338-bluemix.cloudant.com",
+      "username": "username",
+      "password": "password",
+      "host": "somehwere",
       "port": 443,
-      "url": "https://d2a67c57-1c89-4ae9-a71c-c18ca298f338-bluemix:e67deccd52bfda83dc235b8346d58949e6e612aa32086d5c249a53d0bfb79f22@d2a67c57-1c89-4ae9-a71c-c18ca298f338-bluemix.cloudant.com"
+      "url": "https://somewherew"
     };
     // generates something like http://user:pass@host:port/name
     let remoteDbUrl = `https://${bluemixData.username}:${bluemixData.password}@${bluemixData.host}:${bluemixData.port}/anywhere`;
